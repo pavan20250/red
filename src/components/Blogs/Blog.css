@@ -1,0 +1,72 @@
+.title-h1 {
+    font-size: 24px;
+    padding: 20px;
+    margin-bottom: 10px;
+    color: #0d123b;
+    font-family: 'Times New Roman', Times, serif;
+}
+.why_btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #a6a8aa;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+  
+.why_btn:hover {
+    background-color: #005bbc;
+}
+
+/* Stylish box for columns */
+.column {
+    display: inline-block;
+    width: calc(100% / 3 - 20px);
+    padding: 40px;
+    margin: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.column:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.column img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.column h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.column p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.column {
+    animation: fadeIn 0.5s ease-in-out;
+}

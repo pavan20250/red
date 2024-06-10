@@ -1,0 +1,53 @@
+#sponsorship-partnership-jury {
+    text-align: center;
+    padding: 70px 0;
+    background-color: #dddddd;
+    border-radius: 20px;
+    margin: 40px;
+    margin-top: 100px;
+}
+  
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+  
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+  
+.carousel-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+  
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+  
+.carousel-prev {
+    left: 10px;
+}
+  
+.carousel-next {
+    right: 10px;
+}
+  

@@ -1,0 +1,149 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.about{
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.about-left{
+    flex-basis: 30%;
+}
+
+.about-right{
+    flex-basis: 70%;
+    text-align: center;
+
+}
+.about-img{
+    width: 300px;
+
+}
+
+.about h2{
+    font-size: 38px;
+    color: #0d123b;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+.about p{
+    font-size: 16px;
+    color: #3e3636;
+    margin-top: 15px;
+}
+
+/*--------------------------------------*/
+.slider {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    margin-top: -80px;
+    margin-bottom: 30px;
+}
+  
+.slide-track {
+    display: inline-block;
+    animation: scroll-left 50s linear infinite;
+}
+  
+@keyframes scroll-left {
+    0% {
+      transform: translateX(100% + 40px);
+    }
+    100% {
+      transform: translateX(-100%) ;
+    }
+}
+  
+.slide {
+    display: inline-block;
+    margin: 50px;
+    padding: 15px;
+    text-align: center;
+    width: 400px;
+    height: 90px;
+    background-size: cover;
+    background-position: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.slide h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+  
+.slide p {
+    font-size: 16px;
+    color: #666;
+    position: relative;
+}
+
+
+@media (max-width: 700px) {
+    .slide {
+        width: 380px; 
+        margin: 35px; 
+        text-align: center;
+    }
+
+    .slide h2 {
+        font-size: 20px; 
+    }
+
+    .slide p {
+        font-size: 14px; 
+    }
+}
+
+  
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-left,
+    .about-right {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .about-img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about h2 {
+        font-size: 32px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size: 12px;
+    }
+
+    .about-img {
+        max-width: 200px;
+    }
+}
